@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The transition Property</title>
+    <style>
+        div + div {
+            margin-top: 20px;
+        }
+        .one {
+            width: 150px;
+            height: 150px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+        }
+        .two {
+            width: 150px;
+            height: 150px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+        }
+        .three {
+            width: 150px;
+            height: 150px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+        }
+        .four {
+            width: 150px;
+            height: 150px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+        }
+        .five {
+            width: 150px;
+            height: 150px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+        .six {
+            width: 150px;
+            height: 150px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(0.5, 0.6, 1.0, 0.1);
+        }
+        .seven {
+            width: 150px;
+            height: 150px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function:steps(2);
+            /* transition-timing-function:step-start; */
+            /* transition-timing-function:step-end; */
+        }
+
+        .one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover,.seven:hover {
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The transition Property</h1>
+
+    <p>Hover over the div element below, to see the transition effect:</p>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+
+</body>
+
+</html>
